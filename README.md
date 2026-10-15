@@ -1,5 +1,7 @@
 # Host Tournament
 
+[中文说明](README.zh.md) | English
+
 A Mount & Blade II: Bannerlord (v1.5.5) mod that lets the player host a tournament in any town that isn't currently hosting one, by paying a gold prize fee.
 
 ## Features
@@ -11,6 +13,24 @@ A Mount & Blade II: Bannerlord (v1.5.5) mod that lets the player host a tourname
 - **No Harmony dependency**: Pure `CampaignBehavior` + game menus.
 
 ## Install
+
+### Option A: Download the release (recommended)
+
+1. Go to the [Releases page](https://github.com/humphreylibai/HostTournament/releases/latest).
+2. Download `HostTournament.zip` from the latest release.
+3. Extract the zip into your `Mount & Blade II Bannerlord/Modules/` folder. The zip contains a top-level `HostTournament/` folder, so after extraction you should have `Modules/HostTournament/SubModule.xml` and `Modules/HostTournament/bin/Win64_Shipping_Client/HostTournament.dll`.
+4. Launch the game, enable **HostTournament** in the launcher.
+
+### Option B: Build from source
+
+1. Clone this repo.
+2. Build with `dotnet build -c Release` in `src/HostTournament/` (see [Build](#build) below).
+3. Copy the resulting `HostTournament` folder (with `SubModule.xml` and `bin/Win64_Shipping_Client/HostTournament.dll`) into `Mount & Blade II Bannerlord/Modules/`.
+4. Launch the game, enable **HostTournament** in the launcher.
+
+### Option C: Copy an existing install
+
+If you already have the mod files:
 
 1. Copy the `HostTournament` folder into `Mount & Blade II Bannerlord/Modules/`.
 2. Launch the game, enable the module in the launcher.
